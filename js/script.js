@@ -110,6 +110,7 @@ async function clickedMarvel(id) {
 }
 
 async function getPokemanChar(name) {
+	name = name.toLowerCase();
 	const url = `https://pokeapi.co/api/v2/pokemon/${name}/`;
 	const response = await fetch(url);
 	const result = await response.json();
