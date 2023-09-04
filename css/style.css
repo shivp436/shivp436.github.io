@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* logo colors */
+    --red: #F0131E;
+    --white: #fff;
+    /* deadpool theme colors */
+    --japaneseCarmine: #A32633;
+    --darkGunMetal: #20252C;
+    /* venom color theme */
+    --chineseBlack: #0c1520;
+    --spanishGray: #8e9599;
+    /* mjolnir */
+    --platinum: #e7e7e7;
+    /* black panther */
+    --richBlack: #0c0b13;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(var(--japaneseCarmine) 10%, var(--richBlack) 95%);
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--darkGunMetal);
+    padding: 20px 10px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px var(--richBlack);
+    max-width: 500px;
+}
+
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 5px;
+    position: relative;
+}
+
+.input-container select {
+    outline: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.input-container input {
+    padding: 4px 6px;
+    outline: none;
+    border-radius: 3px;
+    border: none;
+}
+
+#suggestion-box {
+    width: 100%;
+    position: relative;
+}
+
+#suggestions {
+    width: inherit;
+    position: absolute;
+    padding: 0;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+#suggestions::-webkit-scrollbar {
+    width: 0;
+}
+
+#suggestions li {
+    width: 100%;
+    list-style: none;
+    background-color: #eee;
+    border-bottom: 1px solid var(--spanishGray);
+    padding: 4px 6px 4px 8px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.display-box {
+    margin: 5px -5px -15px;
+    border-radius: 10px;
+    min-height: 40vh;
+    padding: 10px;
+}
+
+.display-box .charOverviewBox {
+    display: flex;
+    flex-direction: row;
+}
+
+.charOverviewBox .charImgBox {
+    flex: 1;
+    text-align: center;
+}
+
+.charOverviewBox .charImgBox img {
+    height: 150px;
+    width: 150px;
+}
+
+.charOverviewBox .charOverview {
+    flex: 1;
+}
+
+.charOverviewBox .charImgBox img {
+    border: 5px solid var(--darkGunMetal);
+}
+
+.charOverview .name {
+    margin-top: 10px;
+    color: var(--white);
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+
+.charOverview .etc {
+    font-size: 15px;
+    color: var(--spanishGray);
+}
+
+.charIntroBox {
+    padding: 15px 5px 0px;
+    color: var(--platinum);
+    font-size: 16px;
+    
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        max-width: 95vw;
+    }
+
+    .input-container {
+        width: 80%;
+    }
+
+    .display-box {
+        padding: 15px 5px;
+    }
+
+    .display-box .charOverviewBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .charOverviewBox .charOverview {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .charOverviewBox .charImgBox img {
+        border-radius: 50%;
+    }
+
+    .charOverviewBox .charOverview .etc {
+        margin: 10px 35px auto;
+    }
+
+    .charIntroBox .intro {
+        padding: 0px 3px;
+        margin: 3px auto;
+    }
+
+}
