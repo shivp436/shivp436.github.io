@@ -10,7 +10,7 @@ The "Characters API" is a web application that allows users to fetch details abo
 The application fetches character data from different official APIs associated with each universe and returns the requested information based on user-provided conditions.
 
 #### Images
-![MarvelComics-Thor](https://imgur.com/bZfgohg){width=500 height=800} ![Hermione](https://imgur.com/yFyS9Qi){width=500 height=800} ![Pikachu](https://imgur.com/1Ya2k96){width=500 height=800}
+![MarvelComics-Thor](images/marvel_thor.png){width=500 height=800} ![Hermione](images/hermione.png){width=500 height=800} ![Pikachu](images/bulbasaur.png){width=500 height=800}
 
 #### Usage
 To use the "Characters API," follow these steps:
